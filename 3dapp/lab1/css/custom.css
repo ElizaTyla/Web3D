@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
     .dropdown-toggle:hover {
         color: lightgrey;
     }
-    
+
     .navbar_text {
         font-family: Oswald;
         font-size: 24px;
@@ -296,9 +296,35 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px;
         border-radius: 0px;
     }
+
+    #MainImageArea {
+        background-image: url(../assets/images/main_3D.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+    }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    #MainText {
+        float: left;
+        margin: 2.5%;
+        width: 35%;
+        display: block;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 0px;
+    }
+
+    #MainImageArea {
+        background-image: url(../assets/images/main_3D.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
     #MainText {
         float: left;
         margin: 2.5%;
@@ -308,9 +334,16 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px;
         border-radius: 0px;
     }
+
+    #MainImageArea {
+        background-image: url(../assets/images/main_3D.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+    }
 }
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
     #MainText {
         float: left;
         margin: 2.5%;
@@ -320,16 +353,11 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px;
         border-radius: 0px;
     }
-}
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    #MainText {
-        float: left;
-        margin: 2.5%;
-        width: 20%;
-        display: block;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 10px;
-        border-radius: 0px;
+
+    #MainImageArea {
+        background-image: url(../assets/images/main_3D.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
     }
 }
