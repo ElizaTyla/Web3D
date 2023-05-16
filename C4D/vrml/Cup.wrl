@@ -2563,3 +2563,12 @@ DEF Timer TimeSensor {
   cycleInterval 3
   loop TRUE
 }
+DEF ROTKEY_Cup OrientationInterpolator {
+  key [ 0,0.333333,0.666667,1,
+  ]
+  keyValue [ 0 0 0 0,0 1 0 2.094395,0 1 0 4.18879,0 -1 0 0,
+    
+  ]
+}
+ROUTE Timer.fraction_changed TO ROTKEY_Cup.set_fraction
+ROUTE ROTKEY_Cup.value_changed TO Cup.set_rotation

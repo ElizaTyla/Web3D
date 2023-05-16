@@ -130,13 +130,14 @@
 			cutOffAngle="1.48353004455566"
 			radius="100000000" />
 	</Transform>
-	<Transform DEF="Can">
+	<Transform DEF="Can"
+		rotation="0 1 0 1.9839380979538">
 		<Shape>
 			<Appearance DEF="MAT_CanMat">
 				<Material
 					diffuseColor="0.5 0.5 0.5"
-					specularColor="0.210938006639481 0.210938006639481 0.210938006639481"
-					shininess="0.421875" />
+					specularColor="1 1 1"
+					shininess="1" />
 				<ImageTexture
 					url='"cokecantexture.png"' />
 			</Appearance>
@@ -156,5 +157,10 @@
 	<TimeSensor DEF="Timer"
 		cycleInterval="3"
 		loop="true" />
+	<OrientationInterpolator DEF="ROTKEY_Can"
+		key="0 0.333332985639572 0.666666984558105 1"
+		keyValue="0 0 0 0 0 1 0 2.09439492225647 0 1 0 4.18878984451294 0 -1 0 0" />
+	<ROUTE fromNode="Timer" fromField="fraction_changed" toNode="ROTKEY_Can" toField="set_fraction" />
+	<ROUTE fromNode="ROTKEY_Can" fromField="value_changed" toNode="Can" toField="set_rotation" />
 </Scene>
 </X3D>

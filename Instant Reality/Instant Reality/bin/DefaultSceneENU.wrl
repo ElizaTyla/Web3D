@@ -1,0 +1,28 @@
+#VRML V2.0 utf8
+
+Engine
+{
+  desiredFrameRate 25
+  jobs
+  [
+    RenderJob
+    {
+      windowGroups WindowGroup
+      {
+        windows Window
+        {
+          size 300 300
+        }
+      }
+    }
+  ]
+}
+
+Scene
+{
+  children
+  [
+    WorldInfo { title "Welcome" }
+    Inline { url "Splash.x3d" }
+  ]
+}
