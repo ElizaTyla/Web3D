@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-
+to-fit=no">
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/x3dom.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script type="text/javascript" src="js/x3dom.js"></script>
+    <title>Sprite</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-md navbar_top">
+      <div class="container">
+        <div class="Logo">
+          <a class="navbar-brand" href="index.html">
+            <h1>1</h1>
+            <h1>oca</h1>
+            <h2>Cola</h2>
+            <h3>Journey</h3>
+            <p>Refreshing the world, one story at a time</p>
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"><span class="navbar_text">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="navbar_text">About</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="drinksDropdown" data-bs-toggle="dropdown">
+                <span class="navbar_text">Drinks</span>
+              </a>
+              <div class="dropdown-menu drinks-dropdown-items">
+                <a class="dropdown-item" href="cocacola.html"><span class="navbar_dropdown_text">Coca Cola</span></a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="sprite.html"><span class="navbar_dropdown_text">Sprite</span></a>
+                <a class="dropdown-item" href="drpepper.html"><span class="navbar_dropdown_text">Dr Pepper</span></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="navbar_text">Contacts</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	<div class="container main_contents">
+	<div class="row">
+	<div class="col-md-9">
+	  <div class="container modelViewer">
+	  <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-expand navbar_viewer">
+		  <div class="container">
+		  <div class="navbar-nav">
+		  <a class="nav-link active"><span class="navbar_text_nolink">Sprite Model</span></a>
+		  </div>
+		  </div>
+		  </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-expand navbar_viewer">
+		  <div class="container">
+		  <div class="navbar-nav">
+			<a class="nav-link active" href="cocacola.html"><span class="navbar_text">Coca Cola</span></a>
+			<a class="nav-link active" href="sprite.html"><span class="navbar_text">Sprite</span></a>
+			<a class="nav-link active" href="drpepper.html"><span class="navbar_text">Dr Pepper</span></a>
+			</div>
+			</div>
+		  </nav>
+        </div>
+      </div>
+	<div class="row">
+	<div class="col-sm-12">
+      <x3d id='x3dElement' showStat='false' showLog='false' style='width:100%; height:100%; border:0; margin:0; padding:0;'>
+        <scene>
+		  <inline url="Bottle.x3d"></inline>
+        </scene>
+      </x3d>
+	</div>
+    </div>
+		  <div class="row">
+	          <div class="col-sm-12">
+          <nav class="navbar navbar-expand navbar_viewer">
+		  <div class="container">
+		  <div class="navbar-nav">
+		  <a class="nav-link active"><span class="navbar_text_nolink">Camera Views</span></a>
+		  </div>
+		  </div>
+		  </nav>
+        </div>
+	  </div>
+	      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-expand navbar_viewer">
+		  <div class="container">
+		  <div class="navbar-nav">
+			<a class="nav-link active" href="#"><span class="navbar_text_small">Isometric</span></a>
+			<a class="nav-link active" href="#"><span class="navbar_text_small">Front</span></a>
+			<a class="nav-link active" href="#"><span class="navbar_text_small">Back</span></a>
+			<a class="nav-link active" href="#"><span class="navbar_text_small">Left</span></a>
+			<a class="nav-link active" href="#"><span class="navbar_text_small">Right</span></a>
+			<a class="nav-link active" href="#"><span class="navbar_text_small">Top</span></a>
+			<a class="nav-link active" href="#"><span class="navbar_text_small">Bottom</span></a>
+			</div>
+			</div>
+		  </nav>
+        </div>
+      </div>
+	</div>
+	<br>
+	</div>
+			<div class="col-md-3">
+	  <div class="container modelViewer">
+	  <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-expand navbar_viewer">
+		  <div class="container">
+		  <div class="navbar-nav">
+		  <a class="nav-link active"><span class="navbar_text_nolink">Gallery</span></a>
+		  </div>
+		  </div>
+		  </nav>
+        </div>
+      </div>
+	  	<div class="row">
+        <div class="galleryPadding col-sm-12">
+		<a href="cocacola.html">
+		<img src="assets/images/coca_cola_render.png" class="img-fluid img-thumbnail">
+		</a>
+        </div>
+      </div>
+	  	  	<div class="row">
+        <div class="galleryPadding col-sm-12">
+		<a href="sprite.html">
+		<img src="assets/images/sprite_render.png" class="img-fluid img-thumbnail">
+		</a>
+        </div>
+      </div>
+	  	  	<div class="row">
+        <div class="galleryPadding col-sm-12">
+		<a href="drpepper.html">
+		<img src="assets/images/dr_pepper_render.png" class="img-fluid img-thumbnail">
+		</a>
+        </div>
+      </div>
+	</div>
+	</div>
+	</div>
+	      <div class="row">
+        <div class="col-sm-12">
+          <br>
+          <div class="card" style="background-color: darkseagreen;">
+		  <div class="row">
+		  <div class="col-md-6"> 
+		    <img class="d-block w-100" src="assets/images/sprite.jpg" alt="Sprite">
+			</div>
+			<div class="col-md-6">
+			<div class ="modelInfo">
+                <h1 class="card-title"><b>Sprite</b></h1>
+                <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.</p>
+			</div>
+			</div>
+          </div>
+		  </div>
+        </div>
+	</div>
+	</div>
+		<br>
+	<br>
+	<br>
+	<br>
+
+    <nav class="navbar navbar-expand-sm navbar_footer fixed-bottom">
+      <div class="container">
+        <div class="navbar-text float-left copyright">
+          <p><span class="align-baseline"></span>&copy 2019 Mobile Web 3D Applications</span></p>
+        </div>
+        <div class="navbar-text float-right social">
+          <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
+          <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+        </div>
+      </div>
+    </nav>  
+
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/9c44aba5e4.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </body>
+</html>
