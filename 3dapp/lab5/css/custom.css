@@ -117,12 +117,45 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 0px;
 }
 
+.navbar_viewer {
+        background-color: crimson;
+        border-color: lightgrey;
+        border-style: solid;
+        min-height: 30px;
+		max-height: 50px;
+        border-width: 0px;
+    }
+
 .dropdown-toggle {
     color: white;
 }
 
 .dropdown-toggle:hover {
     color: lightgrey;
+}
+
+	.navbar_text_nolink {
+        font-family: Oswald;
+        font-size: 32px;
+        color: white;
+    }
+	
+.toggleView {
+	display: inline;
+}
+
+.navbar_text_small {
+    font-family: Oswald;
+    font-size: 16px;
+    color: white;
+}
+
+.navbar_text_small:hover {
+    color: lightgrey;
+}
+
+.navbar_text_small:focus {
+    color: slategray;
 }
 
 .navbar_text {
@@ -190,6 +223,16 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.navbar-text_small > a {
+    font-size: 7px;
+}
+
+.navbar-text_small > p {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
 .copyright {
     padding-top: 8px;
 }
@@ -214,6 +257,27 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+.galleryPadding {
+	padding: 40px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.modelInfo {
+	padding: 10px;
+	padding-left: 0px;
+}
+
+.img-thumbnail {
+	border-radius: 5px;
+}
+
+.model3D {
+
+    padding:5px;
+    height:250px;
+}
+
 /* X-Small devices (portrait phones, less than 576px)
    No media query for `xs` since this is the default in Bootstrap
 */
@@ -226,6 +290,15 @@ h1, h2, h3, h4, h5, h6 {
         min-height: 70px;
         border-width: 0px;
     }
+	
+	.navbar_viewer {
+        background-color: crimson;
+        border-color: lightgrey;
+        border-style: solid;
+        min-height: 30px;
+        max-height: 40px;
+        border-width: 0px;
+    }
     
     .dropdown-toggle {
         color: white;
@@ -234,7 +307,13 @@ h1, h2, h3, h4, h5, h6 {
     .dropdown-toggle:hover {
         color: lightgrey;
     }
-
+	
+	.navbar_text_nolink {
+        font-family: Oswald;
+        font-size: 32px;
+        color: white;
+    }
+	
     .navbar_text {
         font-family: Oswald;
         font-size: 24px;
@@ -284,6 +363,15 @@ h1, h2, h3, h4, h5, h6 {
     .navbar_dropdown_text {
         color: white;
     }
+
+    .model3D {
+        padding:5px;
+        height:280px;
+    }
+
+    X3d, x3d {
+        height: 100%;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -302,6 +390,11 @@ h1, h2, h3, h4, h5, h6 {
         background-repeat: no-repeat;
         background-size: cover;
         height: 250px;
+    }
+
+    .model3D {
+        padding:5px;
+        height:310px;
     }
 }
 /* Large devices (desktops, 992px and up) */
@@ -322,6 +415,11 @@ h1, h2, h3, h4, h5, h6 {
         background-size: cover;
         height: 300px;
     }
+
+    .model3D {
+        padding:5px;
+        height:340px;
+    }
 }
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -339,7 +437,7 @@ h1, h2, h3, h4, h5, h6 {
         background-image: url(../assets/images/main_3D.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 350px;
+        height: 450px;
     }
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -359,5 +457,10 @@ h1, h2, h3, h4, h5, h6 {
         background-repeat: no-repeat;
         background-size: cover;
         height: 400px;
+    }
+
+    .model3D {
+        padding:5px;
+        height:370px;
     }
 }

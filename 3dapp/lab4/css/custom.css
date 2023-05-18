@@ -117,12 +117,41 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 0px;
 }
 
+.navbar_viewer {
+        background-color: crimson;
+        border-color: lightgrey;
+        border-style: solid;
+        min-height: 30px;
+		max-height: 50px;
+        border-width: 0px;
+    }
+
 .dropdown-toggle {
     color: white;
 }
 
 .dropdown-toggle:hover {
     color: lightgrey;
+}
+
+	.navbar_text_nolink {
+        font-family: Oswald;
+        font-size: 32px;
+        color: white;
+    }
+
+.navbar_text_small {
+    font-family: Oswald;
+    font-size: 16px;
+    color: white;
+}
+
+.navbar_text_small:hover {
+    color: lightgrey;
+}
+
+.navbar_text_small:focus {
+    color: slategray;
 }
 
 .navbar_text {
@@ -190,6 +219,16 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.navbar-text_small > a {
+    font-size: 7px;
+}
+
+.navbar-text_small > p {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
 .copyright {
     padding-top: 8px;
 }
@@ -214,6 +253,28 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+.galleryPadding {
+	padding: 40px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.modelInfo {
+	padding: 10px;
+	padding-left: 0px;
+}
+
+.img-thumbnail {
+	border-radius: 5px;
+}
+
+.model3d {
+	background-color: rgba(0, 0, 0, 1);
+	border-radius: 2px;
+	border: 1px solid rgba(0, 0, 0, 1);
+	padding: 5px;
+}
+
 /* X-Small devices (portrait phones, less than 576px)
    No media query for `xs` since this is the default in Bootstrap
 */
@@ -226,6 +287,15 @@ h1, h2, h3, h4, h5, h6 {
         min-height: 70px;
         border-width: 0px;
     }
+	
+	.navbar_viewer {
+        background-color: crimson;
+        border-color: lightgrey;
+        border-style: solid;
+        min-height: 30px;
+        max-height: 40px;
+        border-width: 0px;
+    }
     
     .dropdown-toggle {
         color: white;
@@ -234,7 +304,13 @@ h1, h2, h3, h4, h5, h6 {
     .dropdown-toggle:hover {
         color: lightgrey;
     }
-
+	
+	.navbar_text_nolink {
+        font-family: Oswald;
+        font-size: 32px;
+        color: white;
+    }
+	
     .navbar_text {
         font-family: Oswald;
         font-size: 24px;
