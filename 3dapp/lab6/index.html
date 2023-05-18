@@ -53,13 +53,7 @@
     <div class="container main_contents">
       <div class="row">
         <div class="col-sm-12">
-          <div id="MainImageArea">
-            <div id="MainText" class="col-xs-12 col-sm-4">
-              <h2><b>Coca Cola Great Britain</b></h2>
-              <h3><b>Founded by Dr John S Pemberton</b></h3>
-              <p>The Coca‑Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands.</p>
-            </div>
-          </div>
+          <div id="MainImageArea" style="background-image: url(assets/images/main_3D.jpg);"></div>
         </div>
       </div>
       
@@ -68,10 +62,11 @@
           <br>
           <div class="card" style="background-color: lightcoral;">
             <div class="card-header">
-              <img class="d-block w-100" src="assets/images/coca_cola.jpg" alt="CocaCola">
+              <div id="homeCocacolaImage"></div>
               <div class="card-body">
-                <h3 class="card-title"><b>Coca Cola</b></h3>
-                <p class="card-text">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special.</p>
+                <div id="homeCocacolaTitle"></div>
+                <div id="homeCocacolaSubTitle"></div>
+                <div id="homeCocacolaDescription"></div>
                 <div class="d-grid gap-2">
                   <a href="javascript:swapPage('cocacolaID')" role="button" class="btn btn-danger"><i>Find out more...</i></a>
                 </div>
@@ -84,11 +79,11 @@
           <br>
           <div class="card" style="background-color: darkseagreen;">
             <div class="card-header">
-              <img class="d-block w-100" src="assets/images/sprite.jpg" alt="Sprite">
+              <div id="homeSpriteImage"></div>
               <div class="card-body">
-                <h3 class="card-title"><b>Sprite</b></h3>
-                <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.</p>
-                <br>
+                <div id="homeSpriteTitle"></div>
+                <div id="homeSpriteSubTitle"></div>
+                <div id="homeSpriteDescription"></div>
                 <div class="d-grid gap-2">
                   <a href="javascript:swapPage('spriteID')" role="button" class="btn btn-success"><i>Find out more...</i></a>
                 </div>
@@ -101,11 +96,11 @@
           <br>
           <div class="card" style="background-color: rosybrown;">
             <div class="card-header">
-              <img class="d-block w-100" src="assets/images/dr_pepper.jpg" alt="DrPepper">
+              <div id="homeDrPepperImage"></div>
               <div class="card-body">
-                <h3 class="card-title"><b>Dr Pepper</b></h3>
-                <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885 and the bold taste of Dr Pepper has been popular ever since</p>
-                <br>
+                <div id="homeDrPepperTitle"></div>
+                <div id="homeDrPepperSubTitle"></div>
+                <div id="homeDrPepperDescription"></div>
                 <div class="d-grid gap-2">
                   <a href="javascript:swapPage('drpepperID')" role="button" class="btn btn-secondary"><i>Find out more...</i></a>
                 </div>
@@ -131,7 +126,7 @@
                 <nav class="navbar navbar-expand navbar_viewer">
             <div class="container">
             <div class="navbar-nav">
-            <a class="nav-link active"><span class="navbar_text_nolink">Coca Cola Model</span></a>
+            <div id="cocacolaModelTitle"></div>
             </div>
             </div>
             </nav>
@@ -139,9 +134,9 @@
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <nav class="navbar navbar-expand navbar_viewer">
+                <nav class="navbar navbar-expand navbar_viewer" style="max-height:100vh; height:auto;">
             <div class="container">
-            <div class="navbar-nav">
+            <div class="navbar-nav camButtonList">
             <a class="nav-link active" href="javascript:swapPage('cocacolaID')"><span class="navbar_text">Coca Cola</span></a>
             <a class="nav-link active" href="javascript:swapPage('spriteID')"><span class="navbar_text">Sprite</span></a>
             <a class="nav-link active" href="javascript:swapPage('drpepperID')"><span class="navbar_text">Dr Pepper</span></a>
@@ -153,11 +148,7 @@
         <div class="row">
         <div class="col-sm-12">
           <div class="model3D">
-            <x3d id='x3dElement' showStat='false' showLog='false' style='width:60%; height:60%; border:0; margin:0; padding:0;'>
-              <scene>
-            <inline url="Can.x3d"></inline>
-              </scene>
-            </x3d>
+		  <div id="cocacolaModel"></div>
           </div>
         </div>
         </div>
@@ -174,22 +165,34 @@
           </div>
               <div class="row">
               <div class="col-sm-12">
-                <nav class="navbar navbar-expand navbar_viewer">
+                <nav class="navbar navbar-expand navbar_viewer" style="max-height:100vh; height:auto;">
             <div class="container">
-            <div class="navbar-nav">
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Isometric</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Front</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Back</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Left</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Right</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Top</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Bottom</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Spin</span></a>
+            <div class="navbar-nav camButtonList">
+            <a class="nav-link active" href="javascript:swapCam('View_Iso')"><span class="navbar_text_small">Isometric</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Front')"><span class="navbar_text_small">Front</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Back')"><span class="navbar_text_small">Back</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Left')"><span class="navbar_text_small">Left</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Right')"><span class="navbar_text_small">Right</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Top')"><span class="navbar_text_small">Top</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Bot')"><span class="navbar_text_small">Bottom</span></a>
+            <a class="nav-link active" href="javascript:toggleSpin()"><span class="navbar_text_small">Spin</span></a>
+            <a class="nav-link active" href="javascript:toggleWireframe()"><span class="navbar_text_small">Wire</span></a>
             </div>
             </div>
             </nav>
               </div>
             </div>
+			            <div class="row">
+                  <div class="col-sm-12">
+                <nav class="navbar navbar-expand navbar_viewer"  style="max-height:100vh; height:auto;">
+				<div class="container">
+            <div class="navbar-nav">
+			<div id="cocacolaModelSubTitle"></div>
+            </div>
+            </div>
+            </nav>
+              </div>
+          </div>
 		</div>
 			<br>
         </div>
@@ -219,12 +222,13 @@
                 <div class="card" style="background-color: lightcoral;">
             <div class="row">
             <div class="col-md-6"> 
-              <img class="d-block w-100" src="assets/images/coca_cola.jpg" alt="CocaCola">
+              <div id="cocacolaImage"></div>
             </div>
             <div class="col-md-6">
             <div class ="modelInfo">
-                      <h1 class="card-title"><b>Coca Cola</b></h1>
-                      <p class="card-text">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special.</p>
+					  <div id="cocacolaTitle"></div>
+					  <div id="cocacolaSubTitle"></div>
+					  <div id="cocacolaDescription"></div>
             </div>
             </div>
                 </div>
@@ -244,7 +248,7 @@
                 <nav class="navbar navbar-expand navbar_viewer">
             <div class="container">
             <div class="navbar-nav">
-            <a class="nav-link active"><span class="navbar_text_nolink">Sprite Model</span></a>
+            <div id="spriteModelTitle"></div>
             </div>
             </div>
             </nav>
@@ -252,9 +256,9 @@
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <nav class="navbar navbar-expand navbar_viewer">
+                <nav class="navbar navbar-expand navbar_viewer" style="max-height:100vh; height:auto;">
             <div class="container">
-            <div class="navbar-nav">
+            <div class="navbar-nav camButtonList">
             <a class="nav-link active" href="javascript:swapPage('cocacolaID')"><span class="navbar_text">Coca Cola</span></a>
             <a class="nav-link active" href="javascript:swapPage('spriteID')"><span class="navbar_text">Sprite</span></a>
             <a class="nav-link active" href="javascript:swapPage('drpepperID')"><span class="navbar_text">Dr Pepper</span></a>
@@ -265,12 +269,8 @@
             </div>
         <div class="row">
         <div class="col-sm-12">
-          <div class="model3D">
-            <x3d id='x3dElement' showStat='false' showLog='false' style='width:60%; height:60%; border:0; margin:0; padding:0;'>
-              <scene>
-            <inline url="Bottle.x3d"></inline>
-              </scene>
-            </x3d>
+        <div class="model3D">
+		  <div id="spriteModel"></div>
           </div>
         </div>
         </div>
@@ -287,22 +287,34 @@
           </div>
               <div class="row">
               <div class="col-sm-12">
-                <nav class="navbar navbar-expand navbar_viewer">
+                <nav class="navbar navbar-expand navbar_viewer" style="max-height:100vh; height:auto;">
             <div class="container">
-            <div class="navbar-nav">
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Isometric</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Front</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Back</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Left</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Right</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Top</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Bottom</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Spin</span></a>
+            <div class="navbar-nav camButtonList">
+            <a class="nav-link active" href="javascript:swapCam('View_Iso')"><span class="navbar_text_small">Isometric</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Front')"><span class="navbar_text_small">Front</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Back')"><span class="navbar_text_small">Back</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Left')"><span class="navbar_text_small">Left</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Right')"><span class="navbar_text_small">Right</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Top')"><span class="navbar_text_small">Top</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Bot')"><span class="navbar_text_small">Bottom</span></a>
+            <a class="nav-link active" href="javascript:toggleSpin()"><span class="navbar_text_small">Spin</span></a>
+			<a class="nav-link active" href="javascript:toggleWireframe()"><span class="navbar_text_small">Wire</span></a>
             </div>
             </div>
             </nav>
               </div>
             </div>
+			            <div class="row">
+                  <div class="col-sm-12">
+                <nav class="navbar navbar-expand navbar_viewer"  style="max-height:100vh; height:auto;">
+				<div class="container">
+            <div class="navbar-nav">
+			<div id="spriteModelSubTitle"></div>
+            </div>
+            </div>
+            </nav>
+              </div>
+          </div>
 			</div>
 			<br>
         </div>
@@ -332,13 +344,13 @@
                 <div class="card" style="background-color: darkseagreen;">
             <div class="row">
             <div class="col-md-6"> 
-              <img class="d-block w-100" src="assets/images/sprite.jpg" alt="Sprite">
+              <div id="spriteImage"></div>
             </div>
             <div class="col-md-6">
             <div class ="modelInfo">
-                      <h1 class="card-title"><b>Sprite</b></h1>
-					  <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.</p>
-
+					  <div id="spriteTitle"></div>
+					  <div id="spriteSubTitle"></div>
+					  <div id="spriteDescription"></div>
             </div>
             </div>
                 </div>
@@ -358,7 +370,7 @@
                 <nav class="navbar navbar-expand navbar_viewer">
             <div class="container">
             <div class="navbar-nav">
-            <a class="nav-link active"><span class="navbar_text_nolink">Dr Pepper Model</span></a>
+            <div id="drpepperModelTitle"></div>
             </div>
             </div>
             </nav>
@@ -366,9 +378,9 @@
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <nav class="navbar navbar-expand navbar_viewer">
+                <nav class="navbar navbar-expand navbar_viewer" style="max-height:100vh; height:auto;">
             <div class="container">
-            <div class="navbar-nav">
+            <div class="navbar-nav camButtonList">
             <a class="nav-link active" href="javascript:swapPage('cocacolaID')"><span class="navbar_text">Coca Cola</span></a>
             <a class="nav-link active" href="javascript:swapPage('spriteID')"><span class="navbar_text">Sprite</span></a>
             <a class="nav-link active" href="javascript:swapPage('drpepperID')"><span class="navbar_text">Dr Pepper</span></a>
@@ -380,11 +392,7 @@
         <div class="row">
         <div class="col-sm-12">
           <div class="model3D">
-            <x3d id='x3dElement' showStat='false' showLog='false' style='width:60%; height:60%; border:0; margin:0; padding:0;'>
-              <scene>
-            <inline url="Cup.x3d"></inline>
-              </scene>
-            </x3d>
+		  <div id="drpepperModel"></div>
           </div>
         </div>
         </div>
@@ -401,22 +409,35 @@
           </div>
               <div class="row">
               <div class="col-sm-12">
-                <nav class="navbar navbar-expand navbar_viewer">
+                <nav class="navbar navbar-expand navbar_viewer" style="max-height:100vh; height:auto;">
             <div class="container">
-            <div class="navbar-nav">
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Isometric</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Front</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Back</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Left</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Right</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Top</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Bottom</span></a>
-            <a class="nav-link active" href="#"><span class="navbar_text_small">Spin</span></a>
-            </div>
+            <div class="navbar-nav camButtonList">
+            <a class="nav-link active" href="javascript:swapCam('View_Iso')"><span class="navbar_text_small">Isometric</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Front')"><span class="navbar_text_small">Front</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Back')"><span class="navbar_text_small">Back</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Left')"><span class="navbar_text_small">Left</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Right')"><span class="navbar_text_small">Right</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Top')"><span class="navbar_text_small">Top</span></a>
+            <a class="nav-link active" href="javascript:swapCam('View_Bot')"><span class="navbar_text_small">Bottom</span></a>
+            <a class="nav-link active" href="javascript:toggleSpin()"><span class="navbar_text_small">Spin</span></a>
+            <a class="nav-link active" href="javascript:toggleWireframe()"><span class="navbar_text_small">Wire</span></a>
+			</div>
             </div>
             </nav>
               </div>
             </div>
+			            <div class="row">
+                  <div class="col-sm-12">
+                <nav class="navbar navbar-expand navbar_viewer"  style="max-height:100vh; height:auto;">
+				<div class="container">
+            <div class="navbar-nav">
+			<div id="drpepperModelSubTitle"></div>
+            </div>
+            </div>
+            </nav>
+              </div>
+          </div>
+
 			</div>
 			<br>
         </div>
@@ -446,13 +467,14 @@
                 <div class="card" style="background-color: rosybrown;">
             <div class="row">
             <div class="col-md-6"> 
-              <img class="d-block w-100" src="assets/images/dr_pepper.jpg" alt="DrPepper">
+              <div id="drpepperImage"></div>
             </div>
             <div class="col-md-6">
             <div class ="modelInfo">
-                      <h1 class="card-title"><b>Dr Pepper</b></h1>
-                <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885 and the bold taste of Dr Pepper has been popular ever since</p>
-            </div>
+					  <div id="drpepperTitle"></div>
+					  <div id="drpepperSubTitle"></div>
+					  <div id="drpepperDescription"></div>
+					  </div>
             </div>
                 </div>
             </div>
@@ -483,6 +505,7 @@
 
     <script type="text/javascript">
 	var viewMode = 0;
+	var isSpinning = true;
 	
       function swapPage(swapTo)
       {
@@ -492,6 +515,34 @@
 	      document.getElementById('drpepperID').style.display = 'none';
 	      document.getElementById(swapTo).style.display = 'block';
       }
+	  
+	  function swapCam(swapTo)
+	  {
+		document.getElementById('cocacolaModelX3D__' + swapTo).setAttribute('bind', 'true');
+		document.getElementById('spriteModelX3D__' + swapTo).setAttribute('bind', 'true');
+		document.getElementById('drpepperModelX3D__' + swapTo).setAttribute('bind', 'true');
+	  }
+	  
+	  function toggleSpin()
+	  {
+		isSpinning = !isSpinning;
+		document.getElementById('cocacolaModelX3D__Timer').setAttribute('enabled', isSpinning.toString());
+		document.getElementById('spriteModelX3D__Timer').setAttribute('enabled', isSpinning.toString());
+		document.getElementById('drpepperModelX3D__Timer').setAttribute('enabled', isSpinning.toString());
+	  }
+	  
+	  function toggleWireframe()
+	  {
+		var cokeWire = document.getElementById('x3dElementCoke');
+		cokeWire.runtime.togglePoints(true);
+		cokeWire.runtime.togglePoints(true);
+		var spriteWire = document.getElementById('x3dElementSprite');
+		spriteWire.runtime.togglePoints(true);
+		spriteWire.runtime.togglePoints(true);
+		var drpepperWire = document.getElementById('x3dElementDrPepper');
+		drpepperWire.runtime.togglePoints(true);
+		drpepperWire.runtime.togglePoints(true);
+	  }
 	  
 	  function toggleViewMode()
 	  {
@@ -527,6 +578,7 @@
     <script src="js/bootstrap.js"></script>
 	<script src="js/gallerygen.js"></script>
 	<script src="js/fslightbox.js"></script>
+	<script src="js/getjsondata.js"></script>
     <script src="https://kit.fontawesome.com/9c44aba5e4.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>

@@ -1,0 +1,37 @@
+{
+    "pageTextData": [
+		{
+			"title": "Coca Cola Great Britain",
+			"subTitle": "Founded by Dr John S Pemberton",		
+			"description": "The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverages and syrups, and produces nearly 400 brands.",
+			"image": "assets/images/main_3D.jpg"
+		},
+		{
+			"x3dModel": "assets/x3d/Can.x3d",
+			"x3dModelTitle": "Coca Cola Model",
+			"x3dCreationMethod": "This X3D file was created in Cinema4D, exported to VRML2, and converted into X3D using view3Dscene.",
+			"title": "Coca Cola",
+			"subTitle": "New York Harbour, 1886",		
+			"description": "It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special.",
+			"image": "assets/images/coca_cola.jpg"
+		},
+		{
+			"x3dModel": "assets/x3d/Bottle.x3d",
+			"x3dModelTitle": "Sprite Model",
+			"x3dCreationMethod": "This X3D file was created in Cinema4D, exported to VRML2, and converted into X3D using view3Dscene.",
+			"title": "Sprite",
+			"subTitle": "West Germany, 1885",		
+			"description": "First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.",
+			"image": "assets/images/sprite.jpg"
+		},
+        {
+			"x3dModel": "assets/x3d/Cup.x3d",
+			"x3dModelTitle": "Dr Pepper Model",
+			"x3dCreationMethod": "This X3D file was created in Cinema4D, exported to VRML2, and converted into X3D using view3Dscene.",
+			"title": "Dr Pepper",
+			"subTitle": "Texas, 1885",		
+			"description": "Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885 and the bold taste of Dr Pepper has been popular ever since.",
+			"image": "assets/images/dr_pepper.jpg"
+		}
+	]
+}
