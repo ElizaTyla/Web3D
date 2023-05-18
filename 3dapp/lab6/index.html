@@ -4,13 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css"></link>
-  <link rel="stylesheet" href="css/custom.css"></link>
-  <link rel="stylesheet" href="css/x3dom.css"></link>
     <title>Index</title>
   </head>
-  <body>
+  <body id="bodyID">
     <nav class="navbar sticky-top navbar-expand-md navbar_top">
       <div class="container">
         <div class="Logo">
@@ -118,6 +114,10 @@
           </div>
         </div>
       </div>
+	  <div class="row">
+	  <div class="col-sm-12">
+	  </div>
+	  </div>
     </div>
     </div>
 
@@ -152,20 +152,13 @@
             </div>
         <div class="row">
         <div class="col-sm-12">
-        <div class="card">
-        <div class="card-body">
           <div class="model3D">
             <x3d id='x3dElement' showStat='false' showLog='false' style='width:60%; height:60%; border:0; margin:0; padding:0;'>
               <scene>
             <inline url="Can.x3d"></inline>
               </scene>
-              <canvas class="x3dom-canvas" id="x3dom-x3dElement-canvas" tabindex="0" width="60%" height="60%"></canvas>
-            </canvas>
             </x3d>
           </div>
-          </div>
-          </div>
-        </div>
         </div>
         </div>
             <div class="row">
@@ -197,10 +190,9 @@
             </nav>
               </div>
             </div>
+		</div>
+			<br>
         </div>
-        </div>
-      </div>
-        <br>
             <div class="col-md-3">
           <div class="container modelViewer">
           <div class="row">
@@ -214,27 +206,11 @@
             </nav>
               </div>
             </div>
-            <div class="row">
-              <div class="galleryPadding col-sm-12">
-          <a href="javascript:swapPage('cocacolaID')">
-          <img src="assets/images/coca_cola_render.png" class="img-fluid img-thumbnail">
-          </a>
-              </div>
-            </div>
-                <div class="row">
-              <div class="galleryPadding col-sm-12">
-          <a href="javascript:swapPage('spriteID')">
-          <img src="assets/images/sprite_render.png" class="img-fluid img-thumbnail">
-          </a>
-              </div>
-            </div>
-                <div class="row">
-              <div class="galleryPadding col-sm-12">
-          <a href="javascript:swapPage('drpepperID')">
-          <img src="assets/images/dr_pepper_render.png" class="img-fluid img-thumbnail">
-          </a>
-              </div>
-            </div>
+			<div class="row">
+				  <div class="gallerySpace container">
+	  </div>
+	  </div>
+        </div>
         </div>
         </div>
             <div class="row">
@@ -254,6 +230,7 @@
                 </div>
             </div>
               </div>
+        </div>
         </div>
     </div>
 
@@ -288,15 +265,15 @@
             </div>
         <div class="row">
         <div class="col-sm-12">
-            <x3d id='x3dElement' showStat='false' showLog='false' style='width:100%; height:60%; border:0; margin:0; padding:0;'>
+          <div class="model3D">
+            <x3d id='x3dElement' showStat='false' showLog='false' style='width:60%; height:60%; border:0; margin:0; padding:0;'>
               <scene>
             <inline url="Bottle.x3d"></inline>
               </scene>
-              <canvas class="x3dom-canvas" id="x3dom-x3dElement-canvas" tabindex="0" width="100%" height="60%"></canvas>
-              </canvas>
             </x3d>
-        </div>
           </div>
+        </div>
+        </div>
             <div class="row">
                   <div class="col-sm-12">
                 <nav class="navbar navbar-expand navbar_viewer">
@@ -320,13 +297,14 @@
             <a class="nav-link active" href="#"><span class="navbar_text_small">Right</span></a>
             <a class="nav-link active" href="#"><span class="navbar_text_small">Top</span></a>
             <a class="nav-link active" href="#"><span class="navbar_text_small">Bottom</span></a>
+            <a class="nav-link active" href="#"><span class="navbar_text_small">Spin</span></a>
             </div>
             </div>
             </nav>
               </div>
             </div>
-        </div>
-        <br>
+			</div>
+			<br>
         </div>
             <div class="col-md-3">
           <div class="container modelViewer">
@@ -342,30 +320,13 @@
               </div>
             </div>
             <div class="row">
-              <div class="galleryPadding col-sm-12">
-          <a href="javascript:swapPage('cocacolaID')">
-          <img src="assets/images/coca_cola_render.png" class="img-fluid img-thumbnail">
-          </a>
-              </div>
-            </div>
-                <div class="row">
-              <div class="galleryPadding col-sm-12">
-          <a href="javascript:swapPage('spriteID')">
-          <img src="assets/images/sprite_render.png" class="img-fluid img-thumbnail">
-          </a>
-              </div>
-            </div>
-                <div class="row">
-              <div class="galleryPadding col-sm-12">
-          <a href="javascript:swapPage('drpepperID')">
-          <img src="assets/images/dr_pepper_render.png" class="img-fluid img-thumbnail">
-          </a>
-              </div>
-            </div>
+				  <div class="gallerySpace container">
+	  </div>
+	  </div>
         </div>
         </div>
         </div>
-              <div class="row">
+            <div class="row">
               <div class="col-sm-12">
                 <br>
                 <div class="card" style="background-color: darkseagreen;">
@@ -376,7 +337,8 @@
             <div class="col-md-6">
             <div class ="modelInfo">
                       <h1 class="card-title"><b>Sprite</b></h1>
-                      <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.</p>
+					  <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.</p>
+
             </div>
             </div>
                 </div>
@@ -387,7 +349,7 @@
     </div>
 
     <div id="drpepperID" style="display:none;" class="container-fluid main_contents">
-      <div class="container main_contents">
+	      <div class="container main_contents">
         <div class="row">
         <div class="col-md-9">
           <div class="container modelViewer">
@@ -417,13 +379,15 @@
             </div>
         <div class="row">
         <div class="col-sm-12">
-            <x3d id='x3dElement' showStat='false' showLog='false' style='width:100%; height:100%; border:0; margin:0; padding:0;'>
+          <div class="model3D">
+            <x3d id='x3dElement' showStat='false' showLog='false' style='width:60%; height:60%; border:0; margin:0; padding:0;'>
               <scene>
             <inline url="Cup.x3d"></inline>
               </scene>
             </x3d>
-        </div>
           </div>
+        </div>
+        </div>
             <div class="row">
                   <div class="col-sm-12">
                 <nav class="navbar navbar-expand navbar_viewer">
@@ -447,13 +411,14 @@
             <a class="nav-link active" href="#"><span class="navbar_text_small">Right</span></a>
             <a class="nav-link active" href="#"><span class="navbar_text_small">Top</span></a>
             <a class="nav-link active" href="#"><span class="navbar_text_small">Bottom</span></a>
+            <a class="nav-link active" href="#"><span class="navbar_text_small">Spin</span></a>
             </div>
             </div>
             </nav>
               </div>
             </div>
-        </div>
-        <br>
+			</div>
+			<br>
         </div>
             <div class="col-md-3">
           <div class="container modelViewer">
@@ -468,42 +433,25 @@
             </nav>
               </div>
             </div>
+           <div class="row">
+				  <div class="gallerySpace container">
+	  </div>
+	  </div>
+        </div>
+        </div>
+        </div>
             <div class="row">
-              <div class="galleryPadding col-sm-12">
-          <a href="javascript:swapPage('cocacolaID')">
-          <img src="assets/images/coca_cola_render.png" class="img-fluid img-thumbnail">
-          </a>
-              </div>
-            </div>
-                <div class="row">
-              <div class="galleryPadding col-sm-12">
-          <a href="javascript:swapPage('spriteID')">
-          <img src="assets/images/sprite_render.png" class="img-fluid img-thumbnail">
-          </a>
-              </div>
-            </div>
-                <div class="row">
-              <div class="galleryPadding col-sm-12">
-          <a href="javascript:swapPage('drpepperID')">
-          <img src="assets/images/dr_pepper_render.png" class="img-fluid img-thumbnail">
-          </a>
-              </div>
-            </div>
-        </div>
-        </div>
-        </div>
-              <div class="row">
               <div class="col-sm-12">
                 <br>
                 <div class="card" style="background-color: rosybrown;">
             <div class="row">
             <div class="col-md-6"> 
-              <img class="d-block w-100" src="assets/images/dr_pepper.jpg" alt="Dr Pepper">
+              <img class="d-block w-100" src="assets/images/dr_pepper.jpg" alt="DrPepper">
             </div>
             <div class="col-md-6">
             <div class ="modelInfo">
                       <h1 class="card-title"><b>Dr Pepper</b></h1>
-                      <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885 and the bold taste of Dr Pepper has been popular ever since</p>
+                <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885 and the bold taste of Dr Pepper has been popular ever since</p>
             </div>
             </div>
                 </div>
@@ -524,6 +472,7 @@
           <p><span class="align-baseline"></span>&copy 2019 Mobile Web 3D Applications</span></p>
         </div>
         <div class="navbar-text float-right social">
+          <a class="nav-link active toggleView" href="javascript:toggleViewMode()"><span class="navbar_text_small">Toggle Mode</span></a>
           <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
           <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
           <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
@@ -533,6 +482,8 @@
     </nav>  
 
     <script type="text/javascript">
+	var viewMode = 0;
+	
       function swapPage(swapTo)
       {
         document.getElementById('homeID').style.display = 'none';
@@ -541,15 +492,47 @@
 	      document.getElementById('drpepperID').style.display = 'none';
 	      document.getElementById(swapTo).style.display = 'block';
       }
+	  
+	  function toggleViewMode()
+	  {
+	  	var back = document.getElementById('bodyID');
+		var navbarTop = document.getElementsByClassName('navbar_top');
+		var navbarFoot = document.getElementsByClassName('navbar_footer');
+		var navbarViewer = document.getElementsByClassName('navbar_viewer');		
+		var dropdownMenu = document.getElementsByClassName('dropdown-menu');
+		if (viewMode == 0)
+		{	
+		back.style.backgroundColor = "crimson";
+		navbarTop[0].style.backgroundColor = "black";
+		navbarFoot[0].style.backgroundColor = "black";
+		dropdownMenu[0].style.backgroundColor = "black";
+		for (var i = 0; i < navbarViewer.length; i++) {navbarViewer[i].style.backgroundColor = "black";} 
+		viewMode = 1;
+		}
+		else
+		{	
+		back.style.backgroundColor = "white";		
+		navbarTop[0].style.backgroundColor = "crimson";
+		navbarFoot[0].style.backgroundColor = "crimson";
+		dropdownMenu[0].style.backgroundColor = "lightcoral";
+		for (var i = 0; i < navbarViewer.length; i++) {navbarViewer[i].style.backgroundColor = "crimson";}
+		viewMode = 0;
+		}
+	  }
     </script>
 
     <script type="text/javascript" src="js/x3dom.js"></script>
     <script src="js/jquery-3.6.3.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+	<script src="js/gallerygen.js"></script>
+	<script src="js/fslightbox.js"></script>
     <script src="https://kit.fontawesome.com/9c44aba5e4.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.css"></link>
+	<link id="stylesheetID" rel="stylesheet" href="css/custom.css"></link>
+	<link rel="stylesheet" href="css/x3dom.css"></link>
     
   </body>
 </html>
